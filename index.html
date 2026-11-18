@@ -91,6 +91,73 @@
 .jb-card .speak{width:34px;height:34px}.jb-card .speak svg{width:17px;height:17px}
 .jb-card small{color:var(--muted)}
 @media (max-width:440px){.jb-opts{grid-template-columns:1fr}.jb-tabs button{font-size:.8rem;padding:10px 2px}.jb-tile{width:2.3rem;height:2.6rem;font-size:1.2rem}}
+
+/* --- глагол to be --- */
+.tb{--yel:#ffd23f;--yel-ink:#4d3800;--grn:#7cc96b;--grn-ink:#123d12;--org:#f39c34}
+.tb-circles{display:flex;justify-content:center;align-items:center;gap:0;padding:8px 0 4px;flex-wrap:wrap}
+.tb-c{border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:var(--shadow);position:relative}
+.tb-c h3{margin:0 0 6px;font:700 .72rem var(--body);text-transform:uppercase;letter-spacing:.08em;opacity:.75}
+.tb-yel{width:250px;height:250px;background:var(--yel);color:var(--yel-ink);z-index:1}
+.tb-yel .v{display:flex;flex-direction:column;gap:2px;font:700 2.6rem/1.05 var(--display)}
+.tb-grn{width:200px;height:200px;background:var(--grn);color:var(--grn-ink);margin-left:-18px;z-index:2;padding:22px}
+.tb-grn .w{display:flex;flex-wrap:wrap;justify-content:center;gap:2px 8px;font:700 1.05rem/1.25 var(--display)}
+.tb-grn .w i{font-style:normal;font-weight:500;font-size:.88rem}
+.tb-grn .w hr{flex-basis:100%;height:0;border:0;margin:2px 0}
+.tb-pairs{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.tb-pairs li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;border:1px solid var(--rule);border-radius:10px;padding:8px 12px;background:var(--paper)}
+.tb-who{display:flex;flex-wrap:wrap;gap:4px}
+.tb-chip{display:inline-block;border-radius:999px;padding:2px 10px;font:700 .95rem var(--display)}
+.tb-chip.g{background:var(--grn);color:var(--grn-ink)}
+.tb-chip.y{background:var(--yel);color:var(--yel-ink);font-size:1.1rem;padding:3px 14px}
+.tb-rule{border-left:4px solid var(--org);background:var(--warnbg);border-radius:0 12px 12px 0;padding:12px 16px;display:grid;gap:10px}
+.tb-rule p{margin:0}
+.tb-ex{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font:600 1.15rem var(--display)}
+.tb-dot{width:22px;height:22px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 2px rgba(0,0,0,.12)}
+.tb-dot.g{background:var(--grn)} .tb-dot.y{background:var(--yel)}
+.tb-ex .arrow{color:var(--muted);font-weight:400}
+.tb-ex b.g{color:var(--ok)} .tb-ex b.y{color:var(--es)}
+.tb h2{font:700 1.1rem var(--display);margin:0}
+.tb-short{color:var(--muted);font-size:.95rem;margin:0}
+@media (max-width:520px){.tb-yel{width:200px;height:200px}.tb-yel .v{font-size:2.1rem}.tb-grn{width:180px;height:180px;margin:-22px 0 0 0;padding:18px}.tb-circles{flex-direction:column}}
+
+/* --- to be: вопросы, формы, задания --- */
+.tb-card{background:var(--sheet);border-radius:14px;box-shadow:var(--shadow);padding:18px 20px;display:flex;flex-direction:column;gap:12px}
+.tb-card .hint{margin:0}
+.tb-qt{display:grid;grid-template-columns:auto auto auto;gap:6px 18px;align-items:center;font:600 1.05rem var(--display)}
+.tb-qt .h{font:700 .72rem var(--body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.tb-qt .q{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+.tb-qt .a{font-family:var(--body);font-weight:600;font-size:.95rem}
+.tb-qt .a.y{color:var(--ok)} .tb-qt .a.n{color:var(--bad)}
+.tb-qt hr{grid-column:1/-1;border:0;border-top:1px dashed var(--rule);margin:2px 0;width:100%}
+.tb-ft{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font:600 1.02rem var(--display)}
+.tb-ft .h{font:700 .72rem var(--body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.tb-ft span{border:1px solid var(--rule);background:var(--paper);border-radius:8px;padding:6px 10px}
+.tb-ft em{font-style:normal;color:var(--muted);font-weight:400;padding:0 4px}
+.tb-ft b{color:var(--accent)}
+.tb-note{margin:0;font-size:.92rem}
+.tb-tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;background:var(--sheet);padding:5px;border-radius:12px;box-shadow:var(--shadow)}
+.tb-tabs button{border:0;background:none;color:var(--muted);font:600 .92rem var(--body);padding:10px 4px;border-radius:8px;cursor:pointer;line-height:1.2}
+.tb-tabs button[aria-selected="true"]{background:var(--accent);color:#fff}
+.tb-tabs button:focus-visible,.tb-tile:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.tb-sent{font:500 clamp(1.4rem,5vw,1.9rem)/1.35 var(--display);margin:0;text-align:center}
+.tb-sent .gs{color:var(--ok);font-weight:700}
+.tb-gap{display:inline-block;min-width:2.4em;border-bottom:3px solid var(--es);color:var(--es);text-align:center;font-weight:700}
+.tb-gap.no{color:var(--bad);border-color:var(--bad)}
+.tb-gl{text-align:center;color:var(--muted);font-size:.9rem;margin:0}
+.tb-task{display:flex;flex-direction:column;gap:14px}
+.tb-task .hint{text-align:center;margin:0}
+.tb-o3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tb-o1{display:grid;gap:8px}
+.tb-o3 .opt{text-align:center;font:700 1.35rem var(--display)}
+.tb-o1 .opt{font-family:var(--display);font-weight:500}
+.tb-line{min-height:3.4rem;border:2px dashed var(--rule);border-radius:12px;padding:8px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center}
+.tb-line.ok{border-color:var(--ok);border-style:solid;background:var(--okbg)} .tb-line.no{border-color:var(--bad);border-style:solid;background:var(--badbg)}
+.tb-bank{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;min-height:2.8rem}
+.tb-tile{border:2px solid var(--rule);background:var(--paper);color:var(--ink);font:600 1.15rem var(--display);padding:6px 12px;border-radius:10px;cursor:pointer}
+.tb-tile.g{background:var(--grn);border-color:var(--grn);color:var(--grn-ink)}
+.tb-tile.y{background:var(--yel);border-color:var(--yel);color:var(--yel-ink)}
+.tb-tile:disabled{cursor:default}
+@media (max-width:520px){.tb-tabs{grid-template-columns:1fr 1fr}.tb-qt{grid-template-columns:1fr 1fr;gap:4px 10px}.tb-qt .q{grid-column:1/-1}.tb-qt .h.hq{display:none}.tb-ft{font-size:.9rem;gap:6px}.tb-ft span{padding:5px 6px}.tb-o3 .opt{font-size:1.15rem;padding:12px 4px}}
 </style>
 <title>Тетрадь слов</title>
 <script>window.WORDS_API="https://script.google.com/macros/s/AKfycbxNQ0YAbot7Buh_Kc8g6d6MlXljH9Sp8W72YKJGJycIjN8jeJCkp9TO6M_KF2UthQCM/exec";</script>
@@ -339,6 +406,7 @@ input.cb-cell.no{border-bottom-color:var(--bad);background:var(--badbg);color:va
     <button class="sec" data-sec="plurals" aria-current="false"><b>Множественное число</b><small>s · es · ies</small></button>
     <button class="sec" data-sec="comb" aria-current="false"><b>Расчёска</b><small>слова на каждую букву</small></button>
     <button class="sec" data-sec="combos" aria-current="false"><b>Буквосочетания</b><small>sh · ch · th · wh · ee · ea · ng · nk…</small></button>
+    <button class="sec" data-sec="tobe" aria-current="false"><b>Глагол to be</b><small>быть / являться · am · is · are</small></button>
   </nav>
 
   <main>
@@ -464,12 +532,88 @@ input.cb-cell.no{border-bottom-color:var(--bad);background:var(--badbg);color:va
       </div>
       <section class="sheet" id="cs-box" aria-live="polite"></section>
     </div>
+    <div class="wrap tb" id="sec-tobe" hidden>
+      <header>
+        <div>
+          <h1>Глагол <span>to be</span></h1>
+          <p class="pl-sub">быть / являться</p>
+        </div>
+      </header>
+
+      <section class="sheet">
+        <div class="tb-circles">
+          <div class="tb-c tb-yel" aria-label="Формы глагола: am, is, are">
+            <h3>формы глагола</h3>
+            <div class="v"><span>am</span><span>is</span><span>are</span></div>
+          </div>
+          <div class="tb-c tb-grn" aria-label="Кто? Местоимения, имена, существительные">
+            <h3>кто? что?</h3>
+            <div class="w">
+              <span>I</span><span>you</span><span>he</span><span>she</span><span>it</span><span>we</span><span>they</span>
+              <hr><i>Tom</i><i>Anna</i><i>Mum</i>
+              <hr><i>the cat</i><i>my friends</i>
+            </div>
+          </div>
+        </div>
+
+        <h2>Кто с кем дружит</h2>
+        <ul class="tb-pairs">
+          <li><span class="tb-who"><span class="tb-chip g">I</span></span><span class="tb-chip y">am</span></li>
+          <li><span class="tb-who"><span class="tb-chip g">he</span><span class="tb-chip g">she</span><span class="tb-chip g">it</span><span class="tb-chip g">Tom</span><span class="tb-chip g">the cat</span></span><span class="tb-chip y">is</span></li>
+          <li><span class="tb-who"><span class="tb-chip g">you</span><span class="tb-chip g">we</span><span class="tb-chip g">they</span><span class="tb-chip g">Tom and Anna</span><span class="tb-chip g">my friends</span></span><span class="tb-chip y">are</span></li>
+        </ul>
+      </section>
+
+      <div class="tb-rule">
+        <p><b>Правило: кто встаёт первым</b></p>
+        <p>✅ В <b>утвердительном</b> предложении сначала <b>зелёный</b> круг (кто?), потом жёлтый (am / is / are):</p>
+        <div class="tb-ex"><span class="tb-dot g"></span><span class="arrow">→</span><span class="tb-dot y"></span>&nbsp; <b class="g">I</b> <b class="y">am</b> happy. &nbsp;<b class="g">She</b> <b class="y">is</b> a pupil.</div>
+        <p>❓ В <b>вопросе</b> наоборот: сначала <b>жёлто-оранжевый</b> круг (am / is / are), потом зелёный:</p>
+        <div class="tb-ex"><span class="tb-dot y"></span><span class="arrow">→</span><span class="tb-dot g"></span>&nbsp; <b class="y">Am</b> <b class="g">I</b> happy? &nbsp;<b class="y">Is</b> <b class="g">she</b> a pupil?</div>
+        <p>❌ В <b>отрицании</b> порядок как в утверждении, только после глагола ставим <b>not</b>:</p>
+        <div class="tb-ex"><span class="tb-dot g"></span><span class="arrow">→</span><span class="tb-dot y"></span><span class="arrow">+ not</span>&nbsp; <b class="g">They</b> <b class="y">are</b> not sad.</div>
+      </div>
+
+      <section class="tb-card" aria-labelledby="tb-q-h">
+        <h2 id="tb-q-h">Вопросы</h2>
+        <p class="hint">В вопросе сначала <b>жёлто-оранжевый</b> круг (am / is / are), потом <b>зелёный</b> (кто?). Отвечаем коротко: да или нет.</p>
+        <div class="tb-qt">
+          <span class="h hq">Вопрос</span><span class="h">✅ Да</span><span class="h">❌ Нет</span>
+          <span class="q"><span class="tb-chip y">Am</span><span class="tb-chip g">I</span> …?</span><span class="a y">Yes, I am.</span><span class="a n">No, I'm not.</span><span class="q"><span class="tb-chip y">Are</span><span class="tb-chip g">you</span> …?</span><span class="a y">Yes, I am.</span><span class="a n">No, I'm not.</span><span class="q"><span class="tb-chip y">Is</span><span class="tb-chip g">he</span> …?</span><span class="a y">Yes, he is.</span><span class="a n">No, he isn't.</span><span class="q"><span class="tb-chip y">Is</span><span class="tb-chip g">she</span> …?</span><span class="a y">Yes, she is.</span><span class="a n">No, she isn't.</span><span class="q"><span class="tb-chip y">Is</span><span class="tb-chip g">it</span> …?</span><span class="a y">Yes, it is.</span><span class="a n">No, it isn't.</span><span class="q"><span class="tb-chip y">Are</span><span class="tb-chip g">we</span> …?</span><span class="a y">Yes, we are.</span><span class="a n">No, we aren't.</span><span class="q"><span class="tb-chip y">Are</span><span class="tb-chip g">they</span> …?</span><span class="a y">Yes, they are.</span><span class="a n">No, they aren't.</span><hr><span class="q"><span class="tb-chip y">Is</span><span class="tb-chip g">Tom</span> happy?</span><span class="a y">Yes, he is.</span><span class="a n">No, he isn't.</span><span class="q"><span class="tb-chip y">Are</span><span class="tb-chip g">the cats</span> hungry?</span><span class="a y">Yes, they are.</span><span class="a n">No, they aren't.</span>
+        </div>
+        <p class="tb-note hint">Спросили «<b>Are you</b>…?» (ты?) — отвечаем про себя: «Yes, <b>I am</b>.»</p>
+      </section>
+
+      <section class="tb-card" aria-labelledby="tb-f-h">
+        <h2 id="tb-f-h">Длинная и короткая форма</h2>
+        <div class="tb-ft">
+          <span class="h">✅ Утверждение</span><span class="h">❌ Отрицание</span>
+          <span>I am<em>→</em><b>I'm</b></span><span>I am not<em>→</em><b>I'm not</b></span><span>you are<em>→</em><b>you're</b></span><span>you are not<em>→</em><b>you aren't</b></span><span>he is<em>→</em><b>he's</b></span><span>he is not<em>→</em><b>he isn't</b></span><span>she is<em>→</em><b>she's</b></span><span>she is not<em>→</em><b>she isn't</b></span><span>it is<em>→</em><b>it's</b></span><span>it is not<em>→</em><b>it isn't</b></span><span>we are<em>→</em><b>we're</b></span><span>we are not<em>→</em><b>we aren't</b></span><span>they are<em>→</em><b>they're</b></span><span>they are not<em>→</em><b>they aren't</b></span>
+        </div>
+        <p class="tb-note">Апостроф <b>'</b> стоит на месте пропавшей буквы: I <b>a</b>m → I<b>'</b>m, is n<b>o</b>t → isn<b>'</b>t. Значат они одно и то же: длинная форма — для письма, короткая — для разговора.</p>
+        <p class="tb-note">⚠️ Слова <b>amn't</b> не бывает! Говорим только <b>I'm not</b>.</p>
+      </section>
+
+      <div class="jobs-ex tb-tasks" id="tb-tasks">
+        <div class="jobs-head">
+          <div><h2>Задания</h2><p class="pl-sub" style="margin:2px 0 0">Предложения собираются из слов вашей тетради — каждый раз новые.</p></div>
+          <div class="stat">Верно <b id="tb-score">0</b> из <span id="tb-total">0</span><div class="bar"><i id="tb-bar"></i></div></div>
+        </div>
+        <div class="tb-tabs" role="tablist">
+          <button role="tab" data-tb="gap" aria-selected="true">am · is · are</button>
+          <button role="tab" data-tb="ask" aria-selected="false">Составь вопрос</button>
+          <button role="tab" data-tb="form" aria-selected="false">Длинная / короткая</button>
+          <button role="tab" data-tb="yn" aria-selected="false">Да или нет</button>
+        </div>
+        <section class="sheet" id="tb-box" aria-live="polite"></section>
+      </div>
+    </div>
   </main>
 </div>
 
 <script>
 /* разделы */
-const SECS=["words","plurals","comb","combos"];
+const SECS=["words","plurals","comb","combos","tobe"];
 let curSec="words";
 function showSec(s,scroll){
   curSec=s;
@@ -1402,6 +1546,215 @@ drawMine();
 })();
 try{localStorage.removeItem("awJustAdded")}catch(e){}
 cats();
+})();
+</script>
+<script>
+/* глагол to be: задания из слов тетради */
+(()=>{
+const box=document.getElementById("tb-box");if(!box)return;
+const g=id=>document.getElementById(id);
+const esc=x=>String(x).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const mix=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const pick=a=>a[Math.random()*a.length|0];
+const cap=x=>x[0].toUpperCase()+x.slice(1);
+const speak=t=>{try{const u=new SpeechSynthesisUtterance(t);u.lang="en-GB";u.rate=.85;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}};
+
+const IRR={man:"men",woman:"women",child:"children",mouse:"mice",tooth:"teeth",foot:"feet",person:"people",sheep:"sheep",fish:"fish",businessman:"businessmen",policeman:"policemen",goose:"geese",deer:"deer"};
+const NOPL=new Set(["rice","oil","ink","milk","water","bread","juice","tea","money","sugar","salt","cheese","butter","honey","snow","rain","jam","soup","meat","chocolate","paper","pasta","porridge","homework"]);
+const PLFORMS=new Set(["men","women","children","mice","teeth","feet","people"]);
+const HE=new Set(["boy","man","businessman","policeman","father","dad","brother","king","grandfather"]);
+const SHE=new Set(["girl","woman","lady","mother","mum","sister","queen","grandmother"]);
+const PERSON=new Set(["child","person","baby","pupil","friend","people"]);
+const pluralWord=w=>{if(IRR[w])return IRR[w];if(/man$/.test(w)&&w!=="human")return w.slice(0,-3)+"men";if(/(s|ss|sh|ch|x|z)$/.test(w))return w+"es";if(/[^aeiou]y$/.test(w))return w.slice(0,-1)+"ies";return w+"s"};
+const plural=w=>{const p=w.split(" ");p[p.length-1]=pluralWord(p[p.length-1]);return p.join(" ")};
+const art=w=>/^[aeiou]/i.test(w)?"an":"a";
+const ruOf=tr=>String(tr||"").split(/[;,(]/)[0].trim();
+
+const ADJ_LIVE=[["big","большой"],["small","маленький"],["happy","весёлый"],["sad","грустный"],["funny","смешной"],["hungry","голодный"],["cute","милый"],["fast","быстрый"],["old","старый"]];
+const ADJ_THING=[["big","большой"],["small","маленький"],["old","старый"],["new","новый"],["nice","красивый"]];
+const ADJ_PPL=[["happy","весёлый"],["sad","грустный"],["hungry","голодный"],["tired","уставший"],["kind","добрый"]];
+
+function pools(){
+  const STOP=new Set(["a","an","the","and","or","but","is","am","are","be","to","of","in","on","at","it","he","she","we","they","you","i","not","yes","no","this","that"]);
+  const W=(typeof WORDS!=="undefined"?WORDS:[]).filter(w=>w&&w.en&&/^[a-z][a-z ]*$/.test(w.en)&&w.en.length>=3&&!STOP.has(w.en)&&!/артикль|местоим|предлог|союз|глагол/i.test(w.tr||"")&&w.en.split(" ").length<=2);
+  const seen=new Set(),uniq=W.filter(w=>!seen.has(w.en)&&seen.add(w.en));
+  const colors=uniq.filter(w=>w.cat==="Цвета"&&!w.en.includes(" ")).map(w=>[w.en,ruOf(w.tr)]);
+  const profs=uniq.filter(w=>w.cat==="Профессии").map(w=>[w.en,ruOf(w.tr)]);
+  const skip=w=>w.cat==="Цвета"||w.cat==="Профессии"||/^Числа/.test(w.cat)||PLFORMS.has(w.en)||PERSON.has(w.en);
+  const animals=uniq.filter(w=>w.cat==="Животные").map(w=>[w.en,ruOf(w.tr)]);
+  const things=uniq.filter(w=>!skip(w)&&w.cat!=="Животные"&&!HE.has(w.en)&&!SHE.has(w.en)).map(w=>[w.en,ruOf(w.tr)]);
+  const people=uniq.filter(w=>HE.has(w.en)||SHE.has(w.en)).map(w=>[w.en,ruOf(w.tr)]);
+  return{colors:colors.length?colors:[["red","красный"],["green","зелёный"]],
+    profs:profs.length?profs:[["teacher","учитель"],["doctor","врач"]],
+    animals:animals.length?animals:[["cat","кошка"],["dog","собака"]],
+    things:things.length?things:[["pen","ручка"],["bag","сумка"]],
+    people:people.length?people:[["boy","мальчик"],["girl","девочка"]]};
+}
+const NAMES=[["Tom","he"],["Anna","she"],["Max","he"],["Kate","she"],["Ben","he"],["Lily","she"]];
+const BE={I:"am",you:"are",he:"is",she:"is",it:"is",we:"are",they:"are"};
+const RU_P={I:"я",you:"ты",he:"он",she:"она",it:"оно",we:"мы",they:"они"};
+
+/* предложение: s — кто (зелёный), v — am/is/are (жёлтый), r — остальное, who — каким местоимением заменить кто */
+function make(kinds){
+  const P=pools();
+  const G={
+    thing(){const n=pick(mix([...P.things,...P.animals]));const live=P.animals.includes(n);const a=pick(Math.random()<.5?P.colors:(live?ADJ_LIVE:ADJ_THING));
+      return{s:["the",...n[0].split(" ")],v:"is",r:[a[0]],who:"it",gl:[n,a]}},
+    plural(){let n=pick(mix([...P.things,...P.animals]).filter(x=>!NOPL.has(x[0])));const live=P.animals.includes(n);const a=pick(Math.random()<.5?P.colors:(live?ADJ_LIVE:ADJ_THING));
+      return{s:["the",...plural(n[0]).split(" ")],v:"are",r:[a[0]],who:"they",gl:[n,a]}},
+    person(){const n=pick(P.people);const a=pick(ADJ_PPL);const who=HE.has(n[0])?"he":"she";return{s:["the",n[0]],v:"is",r:[a[0]],who,gl:[n,a]}},
+    pron(){const p=pick(["I","you","he","she","we","they"]);const n=pick(P.profs);const many=p==="we"||p==="they";
+      return{s:[p],v:BE[p],r:many?plural(n[0]).split(" "):[art(n[0]),...n[0].split(" ")],who:p,gl:[n]}},
+    itis(){const many=Math.random()<.4;let n=pick(mix([...P.things,...P.animals]).filter(x=>!many||!NOPL.has(x[0])));
+      return many?{s:["they"],v:"are",r:plural(n[0]).split(" "),who:"they",gl:[n]}:{s:["it"],v:"is",r:[art(n[0]),...n[0].split(" ")],who:"it",gl:[n]}},
+    name(){if(Math.random()<.35){const[a,b]=mix(NAMES);const n=pick(P.profs);return{s:[a[0],"and",b[0]],v:"are",r:plural(n[0]).split(" "),who:"they",gl:[n]}}
+      const[nm,who]=pick(NAMES);if(Math.random()<.5){const n=pick(P.profs);return{s:[nm],v:"is",r:[art(n[0]),...n[0].split(" ")],who,gl:[n]}}
+      const a=pick(ADJ_PPL);return{s:[nm],v:"is",r:[a[0]],who,gl:[a]}}
+  };
+  return G[pick(kinds)]();
+}
+const words=x=>[...x.s,x.v,...x.r];
+const stmt=x=>{const w=words(x);w[0]=cap(w[0]);return w.join(" ")+"."};
+const qWords=x=>{const sw=x.s.map((w,i)=>i===0&&w!=="I"&&!/^[A-Z]/.test(w)?w:w);return[cap(x.v),...sw,...x.r]};
+const question=x=>qWords(x).join(" ")+"?";
+const subj=x=>x.s.join(" ");
+const gloss=x=>x.gl.map(([e,r])=>`${esc(e)} — ${esc(r)}`).join(" · ");
+const SHORT={I:"I'm",you:"you're",he:"he's",she:"she's",it:"it's",we:"we're",they:"they're"};
+const NEG=v=>v==="am"?"'m not":v==="is"?"n't":"n't";
+const negShort=(p,v)=>v==="am"?"I'm not":`${p} ${v}n't`;
+function why(x){
+  if(x.v==="am")return`С <b>I</b> всегда <b>am</b>.`;
+  if(x.s[0]==="you")return`С <b>you</b> всегда <b>are</b>.`;
+  if(x.v==="is")return x.s.length===1&&BE[x.s[0]]?`<b>${esc(x.s[0])}</b> — один, поэтому <b>is</b>.`:`<b>${esc(subj(x))}</b> = <b>${x.who}</b> (${RU_P[x.who]}) — один, поэтому <b>is</b>.`;
+  return x.s.length===1&&BE[x.s[0]]?`<b>${esc(x.s[0])}</b> — много, поэтому <b>are</b>.`:`<b>${esc(subj(x))}</b> = <b>they</b> (они) — много, поэтому <b>are</b>.`;
+}
+
+let tab="gap",st=null;
+const ROUND=10;
+function stats(){g("tb-score").textContent=st?st.score:0;g("tb-total").textContent=ROUND;g("tb-bar").style.width=(st?st.i/ROUND*100:0)+"%"}
+function head(t){return`<div class="meta"><span>${t}</span><span>${st.i+1} / ${ROUND}</span></div>`}
+function newRound(){st={i:0,score:0};stats();render()}
+function done(){box.innerHTML=`<div class="done flip" style="gap:14px"><p class="tr">Готово!</p><p class="hint">Верно ${st.score} из ${ROUND}</p><button class="btn primary" id="tb-again">Ещё раз</button></div>`;g("tb-again").onclick=newRound;g("tb-again").focus()}
+function next(){st.i++;stats();if(st.i>=ROUND)return done();render()}
+function after(ok,msg,sayT){
+  if(ok)st.score++;stats();
+  const m=g("tb-msg");m.className="msg "+(ok?"ok":"no");m.innerHTML=(ok?"Верно! ":"Не совсем. ")+msg;
+  if(sayT)speak(sayT);
+  const b=document.createElement("button");b.className="btn primary";b.textContent="Дальше →";b.onclick=next;m.after(b);b.focus();
+}
+function choose(opts,correct,onDone){
+  box.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
+    if(box.querySelector(".opt:disabled"))return;
+    box.querySelectorAll(".opt").forEach(o=>{o.disabled=true;if(o.dataset.v===correct)o.classList.add("ok")});
+    const ok=b.dataset.v===correct;if(!ok)b.classList.add("no");onDone(ok);
+  });
+}
+
+function renderGap(){
+  const x=make(["thing","plural","pron","pron","name","person","itis"]);
+  const sw=x.s.slice();sw[0]=cap(sw[0]);
+  box.innerHTML=head("am · is · are")+`<div class="tb-task">
+    <p class="tb-sent"><span class="gs">${esc(sw.join(" "))}</span> <span class="tb-gap" id="tb-gap">___</span> ${esc(x.r.join(" "))}.</p>
+    <p class="tb-gl">${gloss(x)}</p>
+    <p class="hint">Вставьте нужную форму <b>to be</b> (клавиши 1, 2, 3)</p>
+    <div class="tb-o3">${["am","is","are"].map(o=>`<button class="opt" data-v="${o}">${o}</button>`).join("")}</div>
+    <div class="msg" id="tb-msg"></div></div>`;
+  choose(null,x.v,ok=>{const gp=g("tb-gap");gp.textContent=x.v;if(!ok)gp.classList.add("no");after(ok,why(x),stmt(x))});
+}
+
+function renderAsk(){
+  const x=make(["thing","plural","pron","name","person","itis"]);
+  const target=qWords(x);
+  const tiles=target.map((w,i)=>({w,i,c:i===0?"y":(i<=x.s.length?"g":"")}));
+  let bank=mix(tiles);if(bank.every((t,k)=>t.i===k))bank=bank.slice(1).concat(bank[0]);
+  const line=[];
+  box.innerHTML=head("Составь вопрос")+`<div class="tb-task">
+    <p class="tb-sent">${esc(stmt(x))}</p>
+    <p class="tb-gl">${gloss(x)}</p>
+    <p class="hint">Сделайте из предложения вопрос. Нажимайте на слова по порядку. Помните: сначала <b>жёлтый</b>, потом <b>зелёный</b>.</p>
+    <div class="tb-line" id="tb-line"></div>
+    <div class="tb-bank" id="tb-bank"></div>
+    <div class="row" style="justify-content:center"><button class="btn" id="tb-undo" type="button">Стереть</button><button class="btn primary" id="tb-check" type="button" disabled>Проверить</button></div>
+    <div class="msg" id="tb-msg"></div></div>`;
+  const L=g("tb-line"),B=g("tb-bank");let locked=false;
+  const tile=(t,from)=>{const b=document.createElement("button");b.type="button";b.className="tb-tile "+t.c;b.textContent=t.w;b.disabled=locked;
+    b.onclick=()=>{if(locked)return;if(from==="bank"){bank=bank.filter(z=>z!==t);line.push(t)}else{line.splice(line.indexOf(t),1);bank.push(t)}draw()};return b};
+  function draw(){L.innerHTML="";line.forEach(t=>L.append(tile(t,"line")));if(line.length){const q=document.createElement("span");q.textContent="?";q.style.font="700 1.3rem var(--display)";L.append(q)}
+    B.innerHTML="";bank.forEach(t=>B.append(tile(t,"bank")));g("tb-check").disabled=locked||bank.length>0}
+  g("tb-undo").onclick=()=>{if(locked||!line.length)return;bank.push(line.pop());draw()};
+  g("tb-check").onclick=()=>{if(locked)return;locked=true;
+    const ok=line.map(t=>t.w).join(" ")===target.join(" ");L.classList.add(ok?"ok":"no");draw();g("tb-undo").disabled=true;
+    after(ok,ok?`<b>${esc(cap(x.v))}</b> встал первым.`:`Правильно: <b>${esc(question(x))}</b> — сначала <b>${esc(cap(x.v))}</b>, потом <b>${esc(subj(x))}</b>.`,question(x))};
+  draw();
+}
+
+function renderForm(){
+  let x,kind=pick(["pos2s","s2pos","neg2s","s2neg"]);
+  if(kind==="pos2s"||kind==="s2pos"){x=make(["pron","pron","itis"]);}
+  else x=make(["pron","itis","thing","plural","name"]);
+  const p=x.s.length===1&&BE[x.s[0]]?x.s[0]:null;
+  const rest=x.r.join(" ");
+  const S=(a)=>{a=a.trim();return cap(a)};
+  let shown,correct,wrong;
+  const subjTxt=subj(x);
+  if(kind==="pos2s"||kind==="s2pos"){
+    const forms={am:p+"'m",is:p+"'s",are:p+"'re"};
+    const long={am:p+" am",is:p+" is",are:p+" are"};
+    const other=["am","is","are"].filter(v=>v!==x.v);
+    if(kind==="pos2s"){shown=S(long[x.v])+" "+rest+".";correct=S(forms[x.v])+" "+rest+".";wrong=other.map(v=>S(forms[v])+" "+rest+".")}
+    else{shown=S(forms[x.v])+" "+rest+".";correct=S(long[x.v])+" "+rest+".";wrong=other.map(v=>S(long[v])+" "+rest+".")}
+  }else{
+    const isI=x.v==="am";
+    const shortNeg=isI?"I'm not":`${subjTxt} ${x.v}n't`;
+    const longNeg=`${subjTxt} ${x.v} not`;
+    if(kind==="neg2s"){shown=S(longNeg)+" "+rest+".";correct=S(shortNeg)+" "+rest+".";
+      wrong=(isI?["I amn't","I isn't"]:[`${subjTxt} ${x.v==="is"?"are":"is"}n't`,`${subjTxt} amn't`]).map(a=>S(a)+" "+rest+".")}
+    else{shown=S(shortNeg)+" "+rest+".";correct=S(longNeg)+" "+rest+".";
+      wrong=["am","is","are"].filter(v=>v!==x.v).map(v=>S(`${subjTxt} ${v} not`)+" "+rest+".")}
+  }
+  const toShort=kind==="pos2s"||kind==="neg2s";
+  const opts=mix([correct,...wrong]);
+  box.innerHTML=head("Длинная / короткая")+`<div class="tb-task">
+    <p class="tb-sent">${esc(shown)}</p>
+    <p class="tb-gl">${gloss(x)}</p>
+    <p class="hint">Выберите <b>${toShort?"короткую":"длинную"}</b> форму этого предложения</p>
+    <div class="tb-o1">${opts.map(o=>`<button class="opt" data-v="${esc(o)}">${esc(o)}</button>`).join("")}</div>
+    <div class="msg" id="tb-msg"></div></div>`;
+  const expl=x.v==="am"&&(kind==="neg2s"||kind==="s2neg")?`<b>I am not</b> = <b>I'm not</b>. «amn't» не бывает.`
+    :kind==="neg2s"||kind==="s2neg"?`<b>${x.v} not</b> = <b>${x.v}n't</b>.`
+    :`<b>${esc(p)} ${x.v}</b> = <b>${esc(SHORT[p])}</b>.`;
+  choose(null,correct,ok=>after(ok,expl,correct));
+}
+
+function renderYN(){
+  let x;do{x=make(["thing","plural","pron","name","person","itis"])}while(x.who==="I"||x.who==="we");
+  const A=x.who==="you"?"I":x.who,av=BE[A],yes=Math.random()<.5;
+  const ans=(p,v)=>yes?`Yes, ${p} ${v}.`:`No, ${v==="am"?"I'm not":p+" "+v+"n't"}.`;
+  const correct=ans(A,av);
+  const wrongV=A==="I"?(yes?"Yes, I is.":"No, I isn't."):ans(A,av==="is"?"are":"is");
+  const altP=A==="I"?"you":pick(["he","she","it","they"].filter(z=>z!==A));
+  const wrongP=ans(altP,BE[altP]);
+  const opts=mix([correct,wrongV,wrongP]);
+  box.innerHTML=head("Да или нет")+`<div class="tb-task">
+    <p class="tb-sent">${esc(question(x))}</p>
+    <p class="tb-gl">${gloss(x)}</p>
+    <p class="hint">Ответьте коротко: <b>${yes?"✅ да":"❌ нет"}</b></p>
+    <div class="tb-o1">${opts.map(o=>`<button class="opt" data-v="${esc(o)}">${esc(o)}</button>`).join("")}</div>
+    <div class="msg" id="tb-msg"></div></div>`;
+  const expl=x.who==="you"?`Спросили про <b>you</b> (тебя) — отвечаем про себя: <b>I am</b>.`
+    :x.s.length===1?`<b>${esc(x.s[0])}</b> → <b>${A} ${av}</b>.`
+    :`<b>${esc(subj(x))}</b> → <b>${A}</b> (${RU_P[A]}), поэтому «${esc(correct)}»`;
+  choose(null,correct,ok=>after(ok,expl,correct));
+}
+
+function render(){({gap:renderGap,ask:renderAsk,form:renderForm,yn:renderYN})[tab]()}
+document.querySelectorAll(".tb-tabs button").forEach(b=>b.onclick=()=>{tab=b.dataset.tb;document.querySelectorAll(".tb-tabs button").forEach(z=>z.setAttribute("aria-selected",z===b?"true":"false"));newRound()});
+document.addEventListener("keydown",e=>{
+  if(g("sec-tobe").hidden||tab!=="gap"||e.target.closest("input,textarea,select"))return;
+  const o=box.querySelectorAll(".tb-o3 .opt");const k="123".indexOf(e.key);
+  if(k>=0&&o[k]&&!o[k].disabled){o[k].click();e.preventDefault()}
+});
+newRound();
 })();
 </script>
 </body>
